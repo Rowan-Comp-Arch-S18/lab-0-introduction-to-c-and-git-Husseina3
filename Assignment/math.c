@@ -24,7 +24,7 @@
 
 
 #include <stdio.h> // This library allows standard input/output operations
-#include <math.c>
+#include <math.h>
 
  int math(int num1, int num2, char Operator, int result){
 
