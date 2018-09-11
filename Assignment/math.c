@@ -24,9 +24,65 @@
 
 
 #include <stdio.h> // This library allows standard input/output operations
-#include <math.h>
+#include <math.h>  // math.h is the header file for this project
 
- int math(int num1, int num2, char operator, int result){
+#include <stdio.h> // 
+ /*********This block of code was used to test the function *****/
+ int result = 0; // Initializing result 
+
+ int math(int num1, int num2, char operator); // Declaring the function
+
+/****************************** test *******************************/ 
+ int main(void){   
+
+ //Test for Addition
+     math(60,13,'+');      
+     printf("The result is- %d \n",result );
+  
+  //Test for Subtraction
+     math(60,13,'-');       
+     printf("The result is- %d\n",result );
+  
+  //Test for Multiplication  
+     math(60,13,'*');
+     printf("The result is- %d\n",result );
+  
+   //Test for division 
+     math(60,13,'/');      
+     printf("The result is- %d\n",result );
+  
+  //Test for Bitwise AND
+     math(60,13,'&');
+     printf("The result is- %d\n",result );
+  
+  //Test for Bitwise OR
+     math(60,13,'|');
+     printf("The result is- %d\n",result );
+  
+  //Test for Bitwise OR     
+     math(60,13,'%');
+     printf("The result is- %d\n",result );
+   
+  //Test for Shift Left
+     math(60,1,'<');
+     printf("The result is- %d\n",result );
+  
+  //Test for Shift Right
+     math(60,1,'>');
+     printf("The result is- %d\n",result );
+  
+  //Test for Bitwise Xor
+     math(60,13,'^');
+     printf("The result is- %d\n",result );
+  
+   //Test for Bitwise not 
+     math(60,13,'~');
+     printf("The result is- %d\n",result );
+  
+ }
+ 
+/*************** Actual required function for this project ********************/
+ int math(int num1, int num2, char operator){
 
           /*
            *      int math: shows that the function "math" returns an integer value;
@@ -105,5 +161,9 @@
             result= ~num1;
             return result;
             break;
-
-     } // End of math function
+        
+        default: return 0;
+        break;
+     }
+ }
+ 
