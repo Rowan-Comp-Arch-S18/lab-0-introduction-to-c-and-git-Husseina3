@@ -23,7 +23,7 @@ Operator  |  Function  | Use
    <      | Left Shift | (num1 << num2)
    >      |Right Shift | (num1 >> num2)
    &      |Bitwise AND | (num1 & num2)
-          |Bitwise OR  | (num1  num2)
+   |      |Bitwise OR  | (num1  num2)
    ^      |Bitwise XOR | (num1 ^ num2)
    ~      |Bitwise Inverse| (~num1) 
  
